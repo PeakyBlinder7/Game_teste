@@ -1,0 +1,142 @@
+* {
+   margin: 10;
+   padding: 10;
+   box-sizing: border-box;
+}
+
+.game-board {
+  max-width: 800px;
+  max-height: 500px;
+  border: 4px solid rgb(68, 82, 79);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+position: absolute;
+bottom: -30px;
+width: 120px;
+animation: box-animation 2s;
+right: -88px;
+
+}
+
+.boneco {
+    width: 100px;
+    position: absolute;
+    bottom: 110px;
+    animation: jump 900ms ease-in;
+
+    z-index: 1;
+
+}
+
+.jump{
+
+    animation: jump 500ms infinite ease-in-out;
+
+}
+
+.terra{
+    position:absolute;
+    width: 100%;
+    bottom: -5px;
+    right:  0;
+    height: 125px;
+    animation:terra-animation 0s infinite linear;
+
+    z-index: 1;
+
+}
+
+.corvo{
+
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: 659px;
+    animation: corvo-animation 3.5s infinite linear;
+
+    z-index: 1;
+/*animacao do corvo 3.5s*/
+}
+
+.fundo{
+
+    position: relative;
+    height: 500px;
+
+    z-index: 0;
+}
+
+
+
+
+
+/*Animations*/
+
+
+
+@keyframes corvo-animation {
+
+from{
+
+    right: -100px;
+}
+
+to{
+    
+   right: 100%;
+
+}
+
+
+}
+
+@keyframes terra-animation {
+
+    from{
+
+        right: 90px;
+    }
+
+    to{
+
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom:  200px;
+        
+    }
+
+    10%{
+        bottom: 200px;
+    }
+
+    25%{
+        bottom: 200px;
+    }
+    
+
+    40%{
+        bottom: 200px;
+    }
+
+
+    50% {
+        bottom: 200px;
+        
+    }
+
+    100% {
+        bottom: 200px;
+        
+    }
+
+
+}
