@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Joguinho">
     <script src="./js/script.js" defer></script>
+    <script src="Js/pontuacao.js" type="module" defer></script>
+    <script src="Js/btn.js" type="module" defer></script>
 
-    <title> Bang Jump</title>
+    <title>Bang Jump</title>
 </head>
+
 <body>
-    
+
 
     <div class="game-board">
 
-      
-    
-       <img src="./imagens/box.png" class="box">
-       <img src="./imagens/terra.png" class="terra">
-       <img src="./imagens/Run animation - espada-1.gif" class="boneco">
-       <img src="./imagens/fundo.png" class="fundo">
-       <img src="./imagens/corvo.gif" class="corvo">
 
-      
-    
+
+        <img src="./imagens/box.png" class="box">
+        <img src="./imagens/terra.png" class="terra">
+        <img src="./imagens/Run animation - espada-1.gif" class="boneco">
+        <img src="./imagens/fundo.png" class="fundo">
+        <img src="./imagens/corvo.gif" class="corvo">
+
+
+
     </div>
-   
-    <center>
-        
-        <h1><button>Press Start</button></h1>
-        <p>Pontos:</p>
-    
-    </center>
- 
+
+    <div class="under-menu">
+
+        <button class="butao" id="btn">Press Start</button>
+
+    </div>
+
+    <div class="pontuacao">
+        <div class="points">Pontos:</div>
+        <p id="score" clas="elegosta">00</p>
+    </div>
+
 
 
 
 </body>
+
 </html>
