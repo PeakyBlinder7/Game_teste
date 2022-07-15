@@ -1,3 +1,11 @@
 const btn = document.querySelector('#btn');
+const menu = document.querySelector('#start-menu');
 
-btn.addEventListener('click', () => alert("evento"));
+function Sumiu()
+{
+    menu.classList.add('esta-invisivel')
+}
+
+
+
+btn.addEventListener('click', () => Sumiu());
