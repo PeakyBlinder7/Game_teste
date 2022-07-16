@@ -15,7 +15,8 @@
   overflow: hidden;
 }
 
-.box {
+.box 
+{
 position: absolute;
 bottom: -30px;
 width: 120px;
@@ -24,7 +25,8 @@ right: -88px;
 
 }
 
-.boneco {
+.boneco 
+{
     width: 100px;
     position: absolute;
     bottom: 110px;
@@ -46,13 +48,11 @@ right: -88px;
     right:  0;
     height: 125px;
     animation:terra-animation 0s infinite linear;
-
     z-index: 1;
-
 }
 
-.corvo{
-
+.corvo
+{
     width: 100px;
     height: 70px;
     position: absolute;
@@ -77,7 +77,7 @@ right: -88px;
 
 .under-menu
 {
-    z-index: 200;
+    z-index: 15;
     display: flex;
     align-items: center;
     position: absolute;
@@ -122,7 +122,7 @@ right: -88px;
     right: 0;
     margin-top: 10px;
     margin-right: 10px;
-    z-index: 100;
+    z-index: 10;
 }
 
 .elegosta, p
@@ -151,7 +151,7 @@ right: -88px;
 
 .game-over
 {
-    z-index: 200;
+    z-index: 14;
     display: flex;
     align-items: center;
     position: absolute;

@@ -48,6 +48,7 @@ function IncreaseScore()
 function Sumiu() 
 {
   setTimeout(menu.classList.add('esta-invisivel'), 300);
+  gameoverscreen.classList.add('esta-invisivel');
 
   CorvoAndando();
 }
