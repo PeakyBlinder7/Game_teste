@@ -29,14 +29,13 @@ right: -88px;
     position: absolute;
     bottom: 110px;
     animation: jump 900ms ease-in;
-
     z-index: 1;
-
+    height: 100px;
 }
 
 .jump{
 
-    animation: jump 500ms infinite ease-in-out;
+    animation: jump 1000ms infinite ease-in-out;
 
 }
 
@@ -55,9 +54,10 @@ right: -88px;
 .corvo{
 
     width: 100px;
+    height: 70px;
     position: absolute;
-    bottom: 100px;
-    right: 659px;
+    bottom: 110px;
+    right: 0;
     background-color: white;
     z-index: 1;
 /*animacao do corvo 3.5s*/
@@ -138,10 +138,45 @@ right: -88px;
     visibility: hidden;
 }
 
+.esta-visivel
+{
+    visibility: visible;
+}
+
 .goleiro-cassio
 {
     font-size: 2.5rem;
     margin-bottom: 40px;
+}
+
+.game-over
+{
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+}
+
+.game-over, div
+{
+    color: white;
+}
+
+.final-score
+{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
 
 
